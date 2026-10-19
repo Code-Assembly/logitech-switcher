@@ -16,3 +16,13 @@ Icon
 .Trashes
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
+
+### Build
+.build/
+.swiftpm/
+dist/
+
+### Local only
+NOTES.md
+.remember/
+graphify-out/
