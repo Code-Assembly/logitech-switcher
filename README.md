@@ -122,3 +122,20 @@ failure has its own exit code and a one-line reason on stderr.
 scripts/uninstall.sh          # agent and binary
 scripts/uninstall.sh --all    # also config and log
 ```
+
+## Disclaimer
+
+This is an independent project. It is not affiliated with, endorsed by or
+supported by Logitech. Logitech, MX Keys and MX Master are trademarks of
+Logitech.
+
+It talks to the devices over HID++ 2.0, which Logitech does not publicly
+document for this use. The behaviour here was worked out on one MX Keys S and
+one MX Master 4, and other firmware may differ. It writes to the devices: it
+switches their host, turns on key reporting for the trigger key, and renames
+this Mac's pairing slot. It never deletes or re-pairs hosts, and the Easy-Switch
+keys always keep working as a fallback, but you use it at your own risk.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
